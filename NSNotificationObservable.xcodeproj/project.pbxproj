@@ -9,28 +9,13 @@
 /* Begin PBXBuildFile section */
 		4D5A5C111D4F157900B2A873 /* NSNotificationObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A5C101D4F157900B2A873 /* NSNotificationObservable.swift */; };
 		4DCE81031D4F152C0013ECAA /* NSNotificationObservable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCE81021D4F152C0013ECAA /* NSNotificationObservable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DCE810A1D4F152C0013ECAA /* NSNotificationObservable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCE80FF1D4F152C0013ECAA /* NSNotificationObservable.framework */; };
-		4DCE810F1D4F152C0013ECAA /* NSNotificationObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE810E1D4F152C0013ECAA /* NSNotificationObservableTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4DCE810B1D4F152C0013ECAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DCE80F61D4F152C0013ECAA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DCE80FE1D4F152C0013ECAA;
-			remoteInfo = NSNotificationObservable;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D5A5C101D4F157900B2A873 /* NSNotificationObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationObservable.swift; sourceTree = "<group>"; };
 		4DCE80FF1D4F152C0013ECAA /* NSNotificationObservable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSNotificationObservable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCE81021D4F152C0013ECAA /* NSNotificationObservable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNotificationObservable.h; sourceTree = "<group>"; };
 		4DCE81041D4F152C0013ECAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DCE81091D4F152C0013ECAA /* NSNotificationObservableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationObservableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DCE810E1D4F152C0013ECAA /* NSNotificationObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationObservableTests.swift; sourceTree = "<group>"; };
-		4DCE81101D4F152C0013ECAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCE81061D4F152C0013ECAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCE810A1D4F152C0013ECAA /* NSNotificationObservable.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				4DCE81011D4F152C0013ECAA /* NSNotificationObservable */,
-				4DCE810D1D4F152C0013ECAA /* NSNotificationObservableTests */,
 				4DCE81001D4F152C0013ECAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				4DCE80FF1D4F152C0013ECAA /* NSNotificationObservable.framework */,
-				4DCE81091D4F152C0013ECAA /* NSNotificationObservableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,15 +53,6 @@
 				4D5A5C101D4F157900B2A873 /* NSNotificationObservable.swift */,
 			);
 			path = NSNotificationObservable;
-			sourceTree = "<group>";
-		};
-		4DCE810D1D4F152C0013ECAA /* NSNotificationObservableTests */ = {
-			isa = PBXGroup;
-			children = (
-				4DCE810E1D4F152C0013ECAA /* NSNotificationObservableTests.swift */,
-				4DCE81101D4F152C0013ECAA /* Info.plist */,
-			);
-			path = NSNotificationObservableTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +87,6 @@
 			productReference = 4DCE80FF1D4F152C0013ECAA /* NSNotificationObservable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4DCE81081D4F152C0013ECAA /* NSNotificationObservableTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DCE81161D4F152C0013ECAA /* Build configuration list for PBXNativeTarget "NSNotificationObservableTests" */;
-			buildPhases = (
-				4DCE81051D4F152C0013ECAA /* Sources */,
-				4DCE81061D4F152C0013ECAA /* Frameworks */,
-				4DCE81071D4F152C0013ECAA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DCE810C1D4F152C0013ECAA /* PBXTargetDependency */,
-			);
-			name = NSNotificationObservableTests;
-			productName = NSNotificationObservableTests;
-			productReference = 4DCE81091D4F152C0013ECAA /* NSNotificationObservableTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,9 +98,6 @@
 				ORGANIZATIONNAME = "Suguru Kishimoto";
 				TargetAttributes = {
 					4DCE80FE1D4F152C0013ECAA = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					4DCE81081D4F152C0013ECAA = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -170,20 +115,12 @@
 			projectRoot = "";
 			targets = (
 				4DCE80FE1D4F152C0013ECAA /* NSNotificationObservable */,
-				4DCE81081D4F152C0013ECAA /* NSNotificationObservableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4DCE80FD1D4F152C0013ECAA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DCE81071D4F152C0013ECAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,23 +138,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DCE81051D4F152C0013ECAA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DCE810F1D4F152C0013ECAA /* NSNotificationObservableTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4DCE810C1D4F152C0013ECAA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DCE80FE1D4F152C0013ECAA /* NSNotificationObservable */;
-			targetProxy = 4DCE810B1D4F152C0013ECAA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4DCE81111D4F152C0013ECAA /* Debug */ = {
@@ -263,6 +184,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -304,6 +226,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -348,26 +271,6 @@
 			};
 			name = Release;
 		};
-		4DCE81171D4F152C0013ECAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NSNotificationObservableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.NSNotificationObservableTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4DCE81181D4F152C0013ECAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NSNotificationObservableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.NSNotificationObservableTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,15 +288,6 @@
 			buildConfigurations = (
 				4DCE81141D4F152C0013ECAA /* Debug */,
 				4DCE81151D4F152C0013ECAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DCE81161D4F152C0013ECAA /* Build configuration list for PBXNativeTarget "NSNotificationObservableTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DCE81171D4F152C0013ECAA /* Debug */,
-				4DCE81181D4F152C0013ECAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
