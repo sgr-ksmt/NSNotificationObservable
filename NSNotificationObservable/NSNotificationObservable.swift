@@ -20,7 +20,7 @@ import Foundation
         private var notificationName: Notification.Name {
             return Notification.Name(rawValue: self.rawValue)
         }
-        public func addObserver(observer: Any, selector: Selector, object: Any? = nil) {
+        public func addObserver(_ observer: Any, selector: Selector, object: Any? = nil) {
             NotificationCenter.default.addObserver(observer, selector: selector, name: self.notificationName, object: object)
         }
         
@@ -28,7 +28,7 @@ import Foundation
             return NotificationCenter.default.addObserver(forName: self.notificationName, object: object, queue: queue, using: block)
         }
         
-        public func post(object: AnyObject? = nil, userInfo: [AnyHashable: Any]? = nil) {
+        public func post(object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
             NotificationCenter.default.post(name: self.notificationName, object: object, userInfo: userInfo)
         }
         
@@ -36,6 +36,25 @@ import Foundation
             NotificationCenter.default.removeObserver(observer, name: self.notificationName, object: object)
         }
     }
+    
+    public extension Notification.Name {
+        public func addObserver(_ observer: Any, selector: Selector, object: Any? = nil) {
+            NotificationCenter.default.addObserver(observer, selector: selector, name: self, object: object)
+        }
+        
+        public func addObserver(object: Any? = nil, queue: OperationQueue? = nil, usingBlock block: @escaping (Notification) -> Void) -> NSObjectProtocol {
+            return NotificationCenter.default.addObserver(forName: self, object: object, queue: queue, using: block)
+        }
+        
+        public func post(object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
+            NotificationCenter.default.post(name: self, object: object, userInfo: userInfo)
+        }
+        
+        public func removeObserver(observer: Any, object: AnyObject? = nil) {
+            NotificationCenter.default.removeObserver(observer, name: self, object: object)
+        }
+    }
+
 #else
     public protocol NSNotificationObservable: RawRepresentable {
         var rawValue: String { get }
